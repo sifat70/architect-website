@@ -6,7 +6,11 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-.btn-primary{
+.text-light-gray {
+    color: #727272;
+}
+
+.btn-primary {
     border-radius: 8px;
     background: #FF900E;
     padding: 20px 25px;
@@ -22,100 +26,120 @@ header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav > ul {
+
+nav>ul {
     display: flex;
 }
-nav li{
+
+nav li {
     list-style: none;
     margin-right: 30px;
     font-weight: 500;
     font-size: 1rem;
 }
 
-nav li a{
+nav li a {
     text-decoration: none;
     color: #424242;
 }
-.nav-title{
+
+.nav-title {
     font-size: 2.8rem;
     font-weight: 700;
     color: #131313;
 }
 
 /* banner styles */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
 }
-.banner-description{
-    color: #727272;
-}
-.banner img{
+
+.banner img {
     width: 100%;
     margin-top: 20px;
+}
+
+/* header section end */
+
+/* main style */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/* teams style  */
+
+.team-container {
+    display: flex;
+    align-items: center;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.teams-title {
+    font-size: 2.8rem;
+}
+
+.teams-title .quick-list {
+    color: #727272;
+    font-weight: 500;
+}
+
+.teams-title .text-features {
+    color: #FF900E;
+    font-weight: 700;
 }
 
 /* responsive media querise */
 /* mobile device */
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav {
+
+    nav,
+    .team-container {
         flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content {
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
 
 /* medium device */
 @media screen and (min-width: 576px) and (max-width:960px) {
-    header{
+    header {
         padding: 50px;
     }
-    nav {
+
+    nav, .team-container {
         flex-direction: column;
     }
-}
-
-/* main style */
-main{
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-/* teams style  */
-
-.team-container{
-    display: flex;
-    align-items: center;
-}
-.team-img-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-}
-.teams-content{
-    padding-right: 70px;
-    padding-left: 70px;
-}
-.teams-title{
-    font-size: 2.8rem;
-}
-.teams-title .quick-list{
-    color: #727272;
-    font-weight: 500;
-}
-.teams-title .text-features{
-    color: #FF900E;
-    font-weight: 700;
 }
